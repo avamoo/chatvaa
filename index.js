@@ -64,7 +64,7 @@ onChildAdded(newMsg, (data) => {
     } else {
         $(".messages").innerHTML += `<div class="message-wrapper"><p class="msg-name-r">${fullMessage[0]} - ${fullMessage[1]}</p><div id="${data.key}" class="message msg-right">${fullMessage[2]}</div></div>`;
     }
-    $(".messages").scrollIntoView();
+    $(`#${data.key}`).scrollIntoView();
 });
 
 onChildRemoved(newMsg, (data) => {
