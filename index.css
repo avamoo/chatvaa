@@ -512,11 +512,6 @@ body {
 .message {
     padding: 1rem;
     background: linear-gradient(to right, rgb(255, 16, 84), rgb(243, 223, 0));
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
-    border-radius: 1rem;
     color: white;
     margin: 0.5rem;
     margin-top: 0;
@@ -525,11 +520,17 @@ body {
 .msg-right {
     float: right;
     clear: right;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
 }
 
 .msg-left {
     float: left;
     clear: left;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 
 .message-wrapper {
