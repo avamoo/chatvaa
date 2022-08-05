@@ -44,12 +44,7 @@ function sendMessage() {
 }
 
 // Let them enter a username
-if (localStorage.getItem("username") !== null) {
-    let username = prompt("Create a username");
-    localStorage.setItem("username", username);
-} else {
-    var username = localStorage.getItem("username");
-}
+let username = prompt("Create a username");
     
 // Date
 let date = new Date();
