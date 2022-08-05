@@ -68,5 +68,5 @@ onChildAdded(newMsg, (data) => {
 });
 
 onChildRemoved(newMsg, (data) => {
-    $(`#${data.key}`).parentNode.removeChild($(`#${data.key}`))
+    $(`#${data.key}`).parentNode.remove();
 })
