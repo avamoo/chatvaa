@@ -515,6 +515,7 @@ body {
     color: white;
     margin: 0.5rem;
     margin-top: 0;
+    white-space: pre-wrap;
 }
 
 .msg-right {
@@ -534,7 +535,7 @@ body {
 }
 
 .message-wrapper {
-    height: calc(2rem + 1.5rem + 1rem + 2.8rem);
+    display: inline-block;
     width: 100%;
 }
 
@@ -555,5 +556,5 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, rgb(255, 16, 84), rgb(243, 223, 0));
+    background: linear-gradient(to bottom right, rgb(255, 16, 84), rgb(243, 223, 0));
 }
