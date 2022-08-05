@@ -1,0 +1,558 @@
+/*
+*
+* AvaCS - CSS utility library
+* Authors: arozoid
+*
+*/
+
+/* Color */
+
+.bg-dark, .bg-black {
+    background: #202225;
+}
+
+.bg-gray, .bg-grey {
+    background: #bdc3c7;
+}
+
+.bg-light, .bg-white {
+    background: #ecf0f1;
+}
+
+.bg-darkt, .bg-blackt {
+    background: #202225bb;
+}
+
+.bg-grayt, .bg-greyt {
+    background: #bdc3c7bb;
+}
+
+.bg-lightt, .bg-whitet {
+    background: #ecf0f1bb;
+}
+
+.bg-transparent, .bg-hidden {
+    background: transparent;
+}
+
+.bg-danger {
+    background: #e74c3c;
+}
+
+.bg-warning {
+    background: #f39c12;
+}
+
+.bg-primary {
+    background: #686de0;
+}
+
+.bg-info {
+    background: #3498db;
+}
+
+.bg-success {
+    background: #2ecc71;
+}
+
+.bg-dangert {
+    background: #e74c3cbb;
+}
+
+.bg-warningt {
+    background: #f39c12bb;
+}
+
+.bg-primaryt {
+    background: #686de0bb;
+}
+
+.bg-infot {
+    background:#3498dbbb;
+}
+
+.bg-successt {
+    background: #2ecc71bb;
+}
+
+/* Text */
+
+@import url("https://fonts.googleapis.com/css?family=Alata");
+@import url("https://fonts.googleapis.com/css?family=Didact Gothic");
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-dark {
+    color: white;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-style: bold;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+.display-1, .d1 {
+    color: #262626;
+    font-size: 6rem;
+}
+
+.display-2, .d2 {
+    color: #262626;
+    font-size: 4rem;
+}
+
+.display-3, .d3 {
+    color: #262626;
+    font-size: 3rem;
+}
+
+.display-4, .d4 {
+    color: #262626;
+    font-size: 2.5rem;
+}
+
+.display-5, .d5 {
+    color: #262626;
+    font-size: 2rem;
+}
+
+.display-6, .d6 {
+    color: #262626;
+    font-size: 1.75rem;
+}
+
+/* Global */
+
+body {
+    font-family: alata;
+}
+
+/* Position */
+
+.center {
+    margin: 0 auto;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.center-middle, .middle-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top {
+    position: absolute;
+    top: 100%;
+    transform: translate(0, -50%);
+}
+
+.bottom {
+    position: absolute;
+    top: 0%;
+    transform: translate(0, -50%);
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.ml-5 {
+    margin-left: 5px;
+}
+
+.mr-5 {
+    margin-right: 5px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.mr-10 {
+    margin-right:10px;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.ml-15 {
+    margin-left: 15px;
+}
+
+.mr-15 {
+    margin-right: 15px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+/* Sizing */
+
+.xs, .xsmall {
+    width: 50px;
+    height: 50px;
+}
+
+.sm, .small {
+    width: 100px;
+    height: 100px;
+}
+
+.md, .medium {
+    width: 250px;
+    height: 250px;
+}
+
+.lg, .large {
+    width: 375px;
+    height: 375px;
+}
+
+.xl, .xlarge {
+    width: 500px;
+    height: 500px;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.p-3 {
+    padding: 3rem;
+}
+
+.p-4 {
+    padding: 4rem;
+}
+
+.p-5 {
+    padding: 5rem;
+}
+
+.wh {
+    height: 100%;
+}
+
+.ww {
+    width: 100%;
+}
+
+/* Shape */
+
+.circle {
+    border-radius: 50%;
+}
+
+.pill {
+    border-radius: 1rem;
+}
+
+/* Pre-built stuff */
+
+.card {
+    display: flex;
+    background: #fbfbfb;
+    height: 15rem;
+    width: 10.5rem;
+    flex-flow: column wrap;
+}
+
+.card > .body {
+    display: flex;
+    padding: 1rem;
+    text-align: center;
+}
+
+.card > .img {
+    height: 9rem;
+    width: 10.5rem;
+}
+
+.input {
+    padding: 1rem;
+    background: #e9e9e9;
+    font-style: bold;
+    font-family: alata;
+    border: none;
+    color: rgb(32, 32, 32);
+}
+
+.input:focus {
+    outline: none;
+    background: #eeeeee;
+}
+
+.input-dark {
+    padding: 1rem;
+    background: #403f3f;
+    font-style: bold;
+    font-family: alata;
+    border: none;
+    color: rgb(255, 255, 255);
+}
+
+.input-dark:focus {
+    outline: none;
+    background: #605f5f;
+}
+
+.input-hidden {
+    padding: 1rem;
+    background: transparent;
+    font-style: bold;
+    font-family: alata;
+    border: none;
+    color: #eee;
+}
+
+.input-hidden:focus {
+    outline: none;
+}
+
+.btn {
+    padding: 1rem;
+    background: #eeeeee;
+    border: none;
+    font-family: alata;
+}
+
+.btn:hover {
+    background: rgb(213, 216, 216);
+}
+
+.btn:active {
+    background:rgb(194, 197, 197);
+}
+
+.btn-dark {
+    padding: 1rem;
+    background: #2f3136;
+    border: none;
+    color: white;
+    font-family: alata;
+}
+
+.btn-dark:hover {
+    background: #33383f;
+}
+
+.btn-dark:active {
+    background: #202225;
+}
+
+.btn-hidden {
+    padding: 1rem;
+    background: transparent;
+    border: none;
+    color: white;
+    font-family: alata;
+}
+
+.btn-hidden:hover {
+    background: transparent;
+}
+
+.btn-hidden:active {
+    background: transparent;
+}
+
+.title {
+  font-family: 'Didact Gothic';
+  text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.title-dark {
+    font-family: 'Didact Gothic';
+    color: white;
+    text-shadow: 0.1em 0.1em 0.2em black;
+  }
+
+/* Your CSS */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #25272a; 
+}
+
+@keyframes loopPattern {
+    0% {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 0 100%;
+    }
+  }
+  
+#side-bar {
+    float: left;
+    height: 100%;
+}
+
+#logo {
+    background: rgb(24, 24, 24);
+    padding: 2rem;
+}
+
+#msg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: calc(4rem + 50px - 1rem);
+    width: calc(100% - (4rem + 50px + 40px + 2rem));
+    vertical-align: bottom;
+    background: #1b1d20;
+    margin: 20px;
+    padding: 1rem;
+    -o-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px;
+}
+
+#messageToSend {
+    resize: none;
+    width: 90%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+#sendMessage {
+    float: right;
+}
+
+.messages {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - (4rem + 50px + 40px + 2rem));
+    height: calc(100% - (4rem + 50px + 4rem));
+    margin: 1rem;
+    margin-right: 2rem;
+    overflow: auto;
+}
+
+.bg-redyel {
+    background: linear-gradient(to right, red, yellow);
+}
+
+.message {
+    padding: 1rem;
+    background: linear-gradient(to right, rgb(255, 16, 84), rgb(243, 223, 0));
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    border-radius: 1rem;
+    color: white;
+    margin: 0.5rem;
+    margin-top: 0;
+}
+
+.msg-right {
+    float: right;
+    clear: right;
+}
+
+.msg-left {
+    float: left;
+    clear: left;
+}
+
+.message-wrapper {
+    height: calc(2rem + 1.5rem + 1rem + 2.8rem);
+    width: 100%;
+}
+
+.msg-name-l {
+    color: lightgray;
+    margin-left: 1.5rem;
+    float: left;
+}
+
+.msg-name-r {
+    color: lightgray;
+    margin-right: 1.5rem;
+    float: right;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, rgb(255, 16, 84), rgb(243, 223, 0));
+}
