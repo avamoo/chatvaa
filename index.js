@@ -9,7 +9,11 @@ import { getDatabase, set, ref, push, child, onValue, onChildAdded, onChildRemov
 function addZero(i) {
     if (i < 10) {i = "0" + i}
     return i;
-  }
+}
+
+function onlySpaces(str) {
+    return /^\s*$/.test(str);
+}
 
 let $ = (tag) => document.querySelector(tag);
 
@@ -29,18 +33,20 @@ const db = getDatabase(app);
 
 // Chatvaa-related functions
 function sendMessage() {
-    let message = $("#messageToSend").value;
-    let name = username;
-    let time = `${addZero(date.getUTCHours())}:${addZero(date.getUTCMinutes())}`;
+    if (!onlySpaces($("#messageToSend").value)) {
+        let message = $("#messageToSend").value;
+        let name = username;
+        let time = `${addZero(date.getUTCHours())}:${addZero(date.getUTCMinutes())}`;
 
-    const id = push(child(ref(db), 'messages')).key;
+        const id = push(child(ref(db), 'messages')).key;
 
-    set(ref(db, 'messages/' + id), {
-        name: name,
-        time: time,
-        message: message
-    });
-    $("#messageToSend").value = "";
+        set(ref(db, 'messages/' + id), {
+            name: name,
+            time: time,
+            message: message
+        });
+        $("#messageToSend").value = "";
+    }
 }
 
 // Let them enter a username
