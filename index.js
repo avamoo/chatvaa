@@ -41,7 +41,6 @@ function sendMessage() {
         message: message
     });
     $("#messageToSend").value = "";
-    return false;
 }
 
 // Let them enter a username
@@ -59,13 +58,13 @@ $("#sendMessage").addEventListener("click", (e) => {
 
 const newMsg = ref(db, "messages/");
 onChildAdded(newMsg, (data) => {
+    let fullMessage = [data.val().name, data.val().time, data.val().message];
     if (data.val().name != username) {
-        let fullMessage = [data.val().name, data.val().time, data.val().message];
         $(".messages").innerHTML += `<div class="message-wrapper"><p class="left msg-name-l">${fullMessage[0]} - ${fullMessage[1]}</p><div id="${data.key}" class="message msg-left">${fullMessage[2]}</div></div>`;
     } else {
-        let fullMessage = [data.val().name, data.val().time, data.val().message];
         $(".messages").innerHTML += `<div class="message-wrapper"><p class="msg-name-r">${fullMessage[0]} - ${fullMessage[1]}</p><div id="${data.key}" class="message msg-right">${fullMessage[2]}</div></div>`;
     }
+    $(".messages").scrollIntoView();
 });
 
 onChildRemoved(newMsg, (data) => {
