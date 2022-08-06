@@ -499,10 +499,10 @@ body {
 
 .messages {
     position: absolute;
-    top: 10%;
+    top: 12.5%;
     right: 0;
     width: calc(100% - 3rem);
-    height: calc(100% - 20rem);
+    height: 72.5%;
     margin: 1rem;
     margin-right: 2rem;
     overflow: auto;
