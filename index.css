@@ -499,10 +499,10 @@ body {
 
 .messages {
     position: absolute;
-    top: 12.5%;
+    top: 11.75%;
     right: 0;
     width: calc(100% - 3rem);
-    height: 72.5%;
+    height: 69%;
     margin: 1rem;
     margin-right: 2rem;
     overflow: auto;
@@ -555,9 +555,5 @@ body {
 }
 
 ::-webkit-scrollbar {
-    background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom right, rgb(255, 16, 84), rgb(243, 223, 0));
+    display: none;
 }
