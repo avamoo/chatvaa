@@ -515,7 +515,7 @@ body {
     margin: 0.5rem;
     margin-top: 0;
     white-space: pre-wrap;
-    font-size: 0.5em;
+    font-size: 1em;
 }
 
 .msg-right {
