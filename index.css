@@ -498,14 +498,10 @@ body {
 }
 
 .messages {
-    position: absolute;
-    top: 11.75%;
-    right: 0;
     width: calc(100% - 3rem);
-    height: 69%;
-    margin: 1rem;
-    margin-right: 2rem;
     overflow: auto;
+    height: calc(100% - (4rem + 100px + 5rem + 7rem));
+    margin: 0 auto;
 }
 
 .bg-redyel {
