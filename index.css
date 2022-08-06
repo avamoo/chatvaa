@@ -484,6 +484,14 @@ body {
     border-radius: 20px;
 }
 
+#msg-bg {
+    position: absolute;
+    bottom: 0;
+    height: calc(4rem + 75px);
+    width: 100%;
+    background: #25272a;
+}
+
 #messageToSend {
     resize: none;
     width: 50%;
@@ -500,8 +508,8 @@ body {
 .messages {
     width: calc(100% - 3rem);
     overflow: auto;
-    height: calc(100% - (4rem + 100px + 5rem + 7rem));
-    margin: 0 auto;
+    height: calc(67.5%);
+    margin: 0;
 }
 
 .bg-redyel {
