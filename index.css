@@ -455,13 +455,16 @@ body {
   }
   
 #side-bar {
-    float: left;
-    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: rgb(darkgrey);
 }
 
 #logo {
     background: rgb(24, 24, 24);
     padding: 2rem;
+    width: 50px;
 }
 
 #msg {
@@ -469,7 +472,7 @@ body {
     bottom: 0;
     right: 0;
     height: calc(4rem + 50px - 1rem);
-    width: calc(100% - (4rem + 50px + 40px + 2rem));
+    width: calc(100% - 4.5rem);
     vertical-align: bottom;
     background: #1b1d20;
     margin: 20px;
@@ -496,10 +499,10 @@ body {
 
 .messages {
     position: absolute;
-    top: 0;
+    top: 8%;
     right: 0;
-    width: calc(100% - (4rem + 50px + 40px + 2rem));
-    height: calc(100% - (4rem + 50px + 4rem));
+    width: calc(100% - 3rem);
+    height: calc(100% - (4rem + 150px + 4rem + 2rem));
     margin: 1rem;
     margin-right: 2rem;
     overflow: auto;
